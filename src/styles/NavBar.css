@@ -1,0 +1,37 @@
+
+  /* styles/NavBar.css */
+
+.appBar {
+    background-color: #d1918c !important;
+  }
+  
+  .login-button {
+    color: #ffffff !important;
+  }
+  
+  /* styles/NavBar.css */
+
+/* Ensure you have the background-color property here */
+.cover-container {
+    height: 300px; /* Set the height you want for the cover */
+    background-size: cover;
+    background-position: center;
+    background-color: #d1918c; /* Your desired background color */
+    margin-bottom: 20px;
+  }
+  
+  
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+  }
+  /* styles/NavBar.css */
+.appBar {
+  background-color: #e43368;  /* Custom color for your brand */
+}
+
+.appBar button {
+  margin-left: 10px;  /* Add spacing between buttons */
+}
