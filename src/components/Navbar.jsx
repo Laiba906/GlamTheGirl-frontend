@@ -9,7 +9,7 @@ function Navbar({ handleDrawerToggle, activeTab }) {
     <AppBar 
       position="fixed" 
       className="appBar" // Apply the CSS class
-      sx={{ zIndex: 1201, width: { sm: `calc(100% - 240px)` }, ml: { sm: '240px' } }}
+      // sx={{ zIndex: 1201, width: { sm: `calc(100% - 240px)` }, ml: { sm: '240px' } }}
     >
       <Toolbar>
         <IconButton color="inherit" edge="start" onClick={handleDrawerToggle} sx={{ mr: 2 }}>
