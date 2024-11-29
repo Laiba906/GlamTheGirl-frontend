@@ -24,3 +24,4 @@ function SalonCard({ title, description, imageUrl, buttonText }) {
 }
 
 export default SalonCard;
+
