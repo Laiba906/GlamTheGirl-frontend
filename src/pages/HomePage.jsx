@@ -9,6 +9,7 @@ import SignupUser from '../components/SignupUser';
 import SignupSalon from '../components/SignupSalon';
 import LoginUser from '../components/LoginUser';
 import LoginSalon from '../components/LoginSalon';
+import SalonDetails from './SalonDetails';
 
 function HomePage() {
   const [isDrawerOpen, setDrawerOpen] = useState(false);
@@ -31,6 +32,7 @@ function HomePage() {
           {/* Nested Route: This will render the correct content based on the current route */}
           <Route path="*" element={<MainContent />} />{" "}
           {/* Always render nested content here */}
+          <Route path="/salon/:salonId" element={<SalonDetails/>} />
           <Route path="/salondetails" element={<SalonListing />} />
           <Route path="/signup/user" element={<SignupUser />} />
           <Route path="/signup/salon" element={<SignupSalon />} />

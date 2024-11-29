@@ -7,6 +7,7 @@ import SignupUser from './components/SignupUser';
 import SignupSalon from './components/SignupSalon';
 import LoginUser from './components/LoginUser';
 import LoginSalon from './components/LoginSalon';
+import SalonDetails from './pages/SalonDetails';
 
 function App() {
   return (
@@ -19,10 +20,11 @@ function App() {
             <Route path="/signup/salon" element={<SignupSalon />} />
             <Route path="/login/user" element={<LoginUser />} />
             <Route path="/login/salon" element={<LoginSalon />} />
+            <Route path="/salon/:salonId" element={<SalonDetails/>} />
+            <Route path="/salondetails" element={<SalonListing />} />
             {/* Default HomePage content (like MainContent) */}
             <Route index element={<MainContent />} />
             {/* SalonListing component for /salondetails route */}
-            <Route path="/salondetails" element={<SalonListing />} />
           </Route>
         </Routes>
       </BrowserRouter>
